@@ -1,0 +1,55 @@
+.cbutton {
+    button {
+        background-color: #111;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        padding: 4%;
+        width: 160px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 560px) {
+.cbutton {
+    button {
+        background-color: #111;
+        color: #fff;
+        border: none;
+        font-size: 32px;
+        padding: 6%;
+        width: 260px;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 790px) {
+    .cbutton {
+        button {
+            background-color: #111;
+            color: #fff;
+            border: none;
+            padding: 6%;
+            width: 260px;
+        }
+    }
+    }
