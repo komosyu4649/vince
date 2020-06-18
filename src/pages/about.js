@@ -24,7 +24,7 @@ const AboutPage = () => (
         </div>
 
 
-        <StaticQuery
+        {/* <StaticQuery
             query={query}
             render={ data => (
         <div className="company">
@@ -72,10 +72,10 @@ const AboutPage = () => (
                 </div>
         </div>
         )}
-        />
+        /> */}
 
 
-        <StaticQuery 
+        {/* <StaticQuery 
             query={query}
             render={ data => (
         <div className="represent">
@@ -103,10 +103,10 @@ const AboutPage = () => (
             </div>
         </div>
     )}
-    />
+    /> */}
 
 
-    <StaticQuery
+    {/* <StaticQuery
         query={query}
         render={ data => (
     <div className="contribution">
@@ -125,7 +125,7 @@ const AboutPage = () => (
         </div>
     </div>
     )}
-    />
+    /> */}
 
 
     <div className="here">

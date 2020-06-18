@@ -25,7 +25,7 @@ const JissekiPage = () => (
     </div>
 
 
-    <StaticQuery
+    {/* <StaticQuery
         query={query}
         render={ data => (
     <div className="seisaku">
@@ -59,10 +59,10 @@ const JissekiPage = () => (
         </div>
     </div>
         )}
-    />
+    /> */}
 
 
-<StaticQuery
+{/* <StaticQuery
         query={query}
         render={ data => (
     <div className="s-jisseki">
@@ -136,10 +136,10 @@ const JissekiPage = () => (
     </div>
     </div>
 )}
-/>
+/> */}
 
 
-<StaticQuery
+{/* <StaticQuery
         query={query}
         render={ data => (
 <div className="o-jisseki">
@@ -205,7 +205,7 @@ const JissekiPage = () => (
     </div>
 </div>
 )}
-    />
+    /> */}
 
 
 <div className="here">

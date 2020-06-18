@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => (
     </div>
 
 
-    <StaticQuery
+    {/* <StaticQuery
         query={query}
         render={ data => (
                 <div className="resolve">
@@ -102,10 +102,10 @@ const IndexPage = ({ data }) => (
                       </div>
                 </div>
         )}
-    />
+    /> */}
 
  
-    <StaticQuery
+    {/* <StaticQuery
         query={query}
         render={ data => (
             <div className="ryoiki">
@@ -180,7 +180,7 @@ const IndexPage = ({ data }) => (
                 </div>
             </div>
         )}
-    />
+    /> */}
 
 
     <div className="mean">

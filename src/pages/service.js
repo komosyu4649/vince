@@ -49,7 +49,7 @@ const ServicePage = () => (
         </div>
 
 
-        <StaticQuery
+        {/* <StaticQuery
             query={query}
             render={ data => (
         <div className="service-p-w">
@@ -165,7 +165,7 @@ const ServicePage = () => (
 
         </div>
             )}
-        /> 
+        />  */}
 
 
     <div className="service-o-c-w">
@@ -201,7 +201,7 @@ const ServicePage = () => (
         </div>
 
 
-        <StaticQuery
+        {/* <StaticQuery
             query={query}
             render={ data => (
         <div className="service-o">
@@ -288,7 +288,7 @@ const ServicePage = () => (
         </div>
         </div>
             )}
-        />
+        /> */}
 
 
     <div className="here">

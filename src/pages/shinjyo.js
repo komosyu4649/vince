@@ -24,7 +24,7 @@ const ShinjyoPage = () => (
         </div>
 
 
-        <StaticQuery
+        {/* <StaticQuery
             query={query}
             render={ data => (
         <div className="keii"> 
@@ -49,10 +49,10 @@ const ShinjyoPage = () => (
             </div>
         </div>
             ) }
-        />
+        /> */}
 
 
-        <StaticQuery
+        {/* <StaticQuery
             query={query}
             render={ data => (
         <div className="c-support">
@@ -73,10 +73,10 @@ const ShinjyoPage = () => (
             </div>
         </div>
             )}
-        />
+        /> */}
 
 
-        <StaticQuery
+        {/* <StaticQuery
             query={query}
             render={ data => (
                 <div className="future">
@@ -101,7 +101,7 @@ const ShinjyoPage = () => (
                     </div>
                 </div>
             )}
-        />
+        /> */}
 
 
         <div className="here">
