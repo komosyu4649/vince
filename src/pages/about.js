@@ -12,6 +12,9 @@ import Img from 'gatsby-image'
 
 
 const AboutPage = () => (
+    <StaticQuery
+            query={query}
+            render={ data => (
     <Layout>
         <SEO title="Home" />
         
@@ -24,9 +27,6 @@ const AboutPage = () => (
         </div>
 
 
-        {/* <StaticQuery
-            query={query}
-            render={ data => (
         <div className="company">
             <h3>会社概要</h3>
                 <div className="company-w">
@@ -71,13 +71,8 @@ const AboutPage = () => (
                 </div>
                 </div>
         </div>
-        )}
-        /> */}
+        
 
-
-        {/* <StaticQuery 
-            query={query}
-            render={ data => (
         <div className="represent">
             <h3>代表あいさつ</h3>
             <div className="reoresent-w">
@@ -102,13 +97,8 @@ const AboutPage = () => (
 
             </div>
         </div>
-    )}
-    /> */}
+   
 
-
-    {/* <StaticQuery
-        query={query}
-        render={ data => (
     <div className="contribution">
         <h3>貢献活動</h3>
         <div className="contribution-w">
@@ -124,8 +114,6 @@ const AboutPage = () => (
             </div>
         </div>
     </div>
-    )}
-    /> */}
 
 
     <div className="here">
@@ -145,6 +133,8 @@ const AboutPage = () => (
 
 
     </Layout>
+    )}
+    />
 )
 
 

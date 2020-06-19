@@ -12,6 +12,9 @@ import Img from 'gatsby-image'
 
 
 const ShinjyoPage = () => (
+    <StaticQuery
+            query={query}
+            render={ data => (
     <Layout>
         <SEO title="Home" />
 
@@ -24,9 +27,6 @@ const ShinjyoPage = () => (
         </div>
 
 
-        {/* <StaticQuery
-            query={query}
-            render={ data => (
         <div className="keii"> 
             <h3>設立経緯</h3>
             <div className="keii-w">
@@ -48,13 +48,8 @@ const ShinjyoPage = () => (
                 </article>
             </div>
         </div>
-            ) }
-        /> */}
+  
 
-
-        {/* <StaticQuery
-            query={query}
-            render={ data => (
         <div className="c-support">
             <h3>地域密着のサポート体制</h3>
             <div className="c-support-w">
@@ -72,13 +67,8 @@ const ShinjyoPage = () => (
                 </article>
             </div>
         </div>
-            )}
-        /> */}
 
 
-        {/* <StaticQuery
-            query={query}
-            render={ data => (
                 <div className="future">
                     <h3>描く未来</h3>
                     <div className="future-w">
@@ -100,9 +90,7 @@ const ShinjyoPage = () => (
                         </article>
                     </div>
                 </div>
-            )}
-        /> */}
-
+            
 
         <div className="here">
             <h3>サイト制作のご相談は <br className="pc-none" />
@@ -121,6 +109,9 @@ const ShinjyoPage = () => (
 
 
     </Layout>
+    )}
+    />
+
 )
 
 

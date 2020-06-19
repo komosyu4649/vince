@@ -12,7 +12,9 @@ import Img from 'gatsby-image'
 
 
 const JissekiPage = () => (
-
+<StaticQuery
+        query={query}
+        render={ data => (
 <Layout>
     <SEO title="Home" />
 
@@ -25,9 +27,6 @@ const JissekiPage = () => (
     </div>
 
 
-    {/* <StaticQuery
-        query={query}
-        render={ data => (
     <div className="seisaku">
         <h3>農業事業者様に支持されるサイト制作を</h3>
 
@@ -58,13 +57,8 @@ const JissekiPage = () => (
                 </article>
         </div>
     </div>
-        )}
-    /> */}
 
 
-{/* <StaticQuery
-        query={query}
-        render={ data => (
     <div className="s-jisseki">
         <h3>実績一覧</h3>
     <div className="s-jisseki-w">
@@ -135,13 +129,8 @@ const JissekiPage = () => (
         
     </div>
     </div>
-)}
-/> */}
 
 
-{/* <StaticQuery
-        query={query}
-        render={ data => (
 <div className="o-jisseki">
     <h3>お客様の声</h3>
     <div className="o-jisseki-w">
@@ -204,8 +193,6 @@ const JissekiPage = () => (
 
     </div>
 </div>
-)}
-    /> */}
 
 
 <div className="here">
@@ -225,7 +212,8 @@ const JissekiPage = () => (
 
 
 </Layout>
-
+)}
+/>
 )
 
 

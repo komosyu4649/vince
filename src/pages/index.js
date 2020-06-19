@@ -11,8 +11,12 @@ import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
+  <StaticQuery
+        query={query}
+        render={ data => (
   <Layout>
+    
     <SEO title="Home" />
 
 
@@ -47,10 +51,6 @@ const IndexPage = ({ data }) => (
       </div>
     </div>
 
-
-    {/* <StaticQuery
-        query={query}
-        render={ data => (
                 <div className="resolve">
                     <h3>こんなお悩みの解決に…</h3>
                       <div className="resolve-w">
@@ -101,13 +101,8 @@ const IndexPage = ({ data }) => (
                       </div>
                       </div>
                 </div>
-        )}
-    /> */}
-
- 
-    {/* <StaticQuery
-        query={query}
-        render={ data => (
+      
+      
             <div className="ryoiki">
                 <h3>事業領域</h3>
                 <div className="ryoiki-w">
@@ -179,8 +174,6 @@ const IndexPage = ({ data }) => (
                     </div>
                 </div>
             </div>
-        )}
-    /> */}
 
 
     <div className="mean">
@@ -247,8 +240,10 @@ const IndexPage = ({ data }) => (
         </div>
     </div>
 
-    
+  
   </Layout>
+  )}
+/> 
   
 )
 

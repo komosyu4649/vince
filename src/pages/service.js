@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -12,6 +12,9 @@ import Img from 'gatsby-image'
 
 
 const ServicePage = () => (
+    <StaticQuery
+            query={query}
+            render={ data => (
     <Layout>
         <SEO title="Home" />
 
@@ -49,9 +52,6 @@ const ServicePage = () => (
         </div>
 
 
-        {/* <StaticQuery
-            query={query}
-            render={ data => (
         <div className="service-p-w">
             <div className="service-p-i">
                 <Img fluid={data.s1img.childImageSharp.fluid} />
@@ -164,8 +164,6 @@ const ServicePage = () => (
             </div>
 
         </div>
-            )}
-        />  */}
 
 
     <div className="service-o-c-w">
@@ -201,9 +199,6 @@ const ServicePage = () => (
         </div>
 
 
-        {/* <StaticQuery
-            query={query}
-            render={ data => (
         <div className="service-o">
             <h3>他サービス一覧</h3>
         <div className="service-o-w">
@@ -287,8 +282,6 @@ const ServicePage = () => (
             </div>
         </div>
         </div>
-            )}
-        /> */}
 
 
     <div className="here">
@@ -307,6 +300,8 @@ const ServicePage = () => (
     </div>
 
     </Layout>
+       )}
+       />
 )
 
 
